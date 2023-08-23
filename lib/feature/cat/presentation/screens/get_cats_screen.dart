@@ -24,7 +24,7 @@ class GetCatsScreen extends StatelessWidget {
             children: [
               state is GetCatsLoading
                   ? const Center(child: CircularProgressIndicator())
-                  : CatTab(),
+                  : const CatTab(),
             ],
           );
         }),
