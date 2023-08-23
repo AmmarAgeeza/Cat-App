@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
-import 'package:wiet_corp_test_task/feature/features/cat/data/datasources/cat_remote_data_source.dart';
-import 'package:wiet_corp_test_task/feature/features/cat/data/repositories/cat_repository.dart';
-import 'package:wiet_corp_test_task/feature/features/cat/domain/repositories/base_repo.dart';
-import 'package:wiet_corp_test_task/feature/features/cat/domain/usecases/get_cats_use_case.dart';
+import 'package:wiet_corp_test_task/feature/cat/data/datasources/cat_remote_data_source.dart';
+import 'package:wiet_corp_test_task/feature/cat/data/repositories/cat_repository.dart';
+import 'package:wiet_corp_test_task/feature/cat/domain/repositories/base_repo.dart';
+import 'package:wiet_corp_test_task/feature/cat/domain/usecases/get_cats_use_case.dart';
 
-import '../../feature/features/cat/presentation/cubit/cat_cubit.dart';
+import '../../feature/cat/presentation/cubit/cat_cubit.dart';
 import '../database/api/api_consumer.dart';
 import '../database/api/app_interceptors.dart';
 import '../database/api/dio_consumer.dart';

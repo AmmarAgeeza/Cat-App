@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wiet_corp_test_task/core/base_usecase/base_usecase.dart';
-import 'package:wiet_corp_test_task/feature/features/cat/domain/entities/cat_entity.dart';
+import 'package:wiet_corp_test_task/feature/cat/domain/entities/cat_entity.dart';
 
 import '../../domain/usecases/get_cats_use_case.dart';
 import 'cat_state.dart';

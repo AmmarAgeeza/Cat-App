@@ -1,7 +1,7 @@
 import 'package:wiet_corp_test_task/core/database/api/api_consumer.dart';
 import 'package:wiet_corp_test_task/core/database/api/end_points.dart';
 import 'package:wiet_corp_test_task/core/services/service_locator.dart';
-import 'package:wiet_corp_test_task/feature/features/cat/data/models/cat_model.dart';
+import 'package:wiet_corp_test_task/feature/cat/data/models/cat_model.dart';
 
 
 abstract class BaseCatRemoteDataSource {

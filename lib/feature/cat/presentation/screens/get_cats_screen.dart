@@ -24,9 +24,7 @@ class GetCatsScreen extends StatelessWidget {
             children: [
               state is GetCatsLoading
                   ? const Center(child: CircularProgressIndicator())
-                  : const Expanded(
-                      child: CatTab(),
-                    ),
+                  : CatTab(),
             ],
           );
         }),
@@ -44,15 +42,17 @@ class CatTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(12),
-      child: StaggeredGrid.count(
-        crossAxisCount: 3,
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 12,
-        axisDirection: AxisDirection.down,
-        children: List.generate(
-          BlocProvider.of<CatCubit>(context).cats.length,
-          (index) => ImageComponent(
-            cat: BlocProvider.of<CatCubit>(context).cats[index],
+      child: SingleChildScrollView(
+        child: StaggeredGrid.count(
+          crossAxisCount: 3,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 12,
+          axisDirection: AxisDirection.down,
+          children: List.generate(
+            BlocProvider.of<CatCubit>(context).cats.length,
+            (index) => ImageComponent(
+              cat: BlocProvider.of<CatCubit>(context).cats[index],
+            ),
           ),
         ),
       ),
