@@ -8,6 +8,7 @@ import 'core/bloc/bloc_observer.dart';
 void main() {
   //splash screen
   //test server
+  //on boarding
   Bloc.observer = MyBlocObserver();
   serviceLocatorInit();
   runApp(const MyApp());
