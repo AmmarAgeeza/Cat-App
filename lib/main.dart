@@ -6,6 +6,7 @@ import 'app/app.dart';
 import 'core/bloc/bloc_observer.dart';
 
 void main() {
+  //splash screen
   Bloc.observer = MyBlocObserver();
   serviceLocatorInit();
   runApp(const MyApp());
